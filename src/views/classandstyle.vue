@@ -3,8 +3,9 @@
     <button @click="flag = !flag">切换tab栏</button>
     <ul class="tab__ul--main" v-if="flag">
       <li
-      v-for="item in 6"
+      v-for="item in filterArr"
       :key="item"
+
       :class="{active:currActice === item }"
       @click="toggle(item)">{{ item }}</li>
     </ul>
@@ -27,6 +28,7 @@ export default {
   name: 'ClassAndStyle',
   data() {
     return {
+      arr: [1,2,3,4,5,6,7],
       currActice: 1,
       flag: true
     };
@@ -37,6 +39,11 @@ export default {
       this.currActice = param
     }
   },
+  computed: {
+    filterArr(item) {
+      return  this.arr.filter(item => item > 3)
+    }
+  }
 };
 </script>
 
