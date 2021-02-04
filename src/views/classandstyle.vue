@@ -16,6 +16,9 @@
       :class="{active:currActice === item }"
       @click="toggle(item)">{{ item }}</li>
     </ul>
+
+    <div class="one" v-if="flag"></div>
+    <div class="two" v-show="flag"></div>
   </div>
 </template>
 
@@ -68,5 +71,15 @@ ul {
         background-color: rgba(200, 200, 200, 1);
     }
   }
+}
+.one, .two {
+  width: 300px;
+  height: 200px;
+}
+.one {
+  background-color: lightcoral;
+}
+.two {
+  background-color: lightgreen;
 }
 </style>
