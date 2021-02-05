@@ -27,6 +27,11 @@ const routes = [
     path: '/classandstyle',
     name: 'ClassAndStyle',
     component:() => import('../views/classandstyle.vue')
+  },
+  {
+    path: '/form',
+    name: 'FormCom',
+    component:() => import('../views/form.vue')
   }
 ]
 
