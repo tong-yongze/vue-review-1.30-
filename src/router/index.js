@@ -32,6 +32,11 @@ const routes = [
     path: '/form',
     name: 'FormCom',
     component:() => import('../views/form.vue')
+  },
+  {
+    path: '/com0206',
+    name: 'Com0206',
+    component:() => import('../views/com0206.vue')
   }
 ]
 

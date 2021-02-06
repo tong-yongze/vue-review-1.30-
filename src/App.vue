@@ -5,7 +5,8 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/article">Article</router-link> |
       <router-link to="/classandstyle">样式</router-link> |
-      <router-link to="/form">表单</router-link>
+      <router-link to="/form">表单</router-link> |
+      <router-link to="/com0206">测试组件</router-link>
     </div>
     <router-view/>
   </div>
