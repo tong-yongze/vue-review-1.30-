@@ -34,6 +34,11 @@ export default {
       type: Number
     }
   },
+  data() {
+    return {
+      valueInitail: this.value
+    }
+  },
   created() {
     console.log('孙组件', this.$attrs)
   },
@@ -41,6 +46,7 @@ export default {
     sunUpdateParent() {
       // this.articleId++   这样会报错 因为vue 是单项数据流 单向下行绑定 子组件要是直接修改了父组件的内容 就破坏了这种结构 vue不允许 如果一定要修改 可以通过data初始值props值 或者计算属性 来改
       this.$emit('Self-Event',this.articleId +1)
+      this.$emit('input',this.value + 1)
     }
   },
 };
