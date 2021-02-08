@@ -6,7 +6,8 @@
       <router-link to="/article">Article</router-link> |
       <router-link to="/classandstyle">样式</router-link> |
       <router-link to="/form">表单</router-link> |
-      <router-link to="/com0206">测试组件</router-link>
+      <router-link to="/com0206">测试组件</router-link> |
+      <router-link to="/slot0206">测试插槽</router-link>
     </div>
     <router-view/>
   </div>

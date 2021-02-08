@@ -37,6 +37,11 @@ const routes = [
     path: '/com0206',
     name: 'Com0206',
     component:() => import('../views/com0206.vue')
+  },
+  {
+    path: '/slot0206',
+    name: 'Slot0206',
+    component:() => import('../views/slot0206.vue')
   }
 ]
 
