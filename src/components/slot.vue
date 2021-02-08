@@ -1,9 +1,10 @@
 <template>
   <div>
-    <h3>插槽</h3>
+    <h3>插槽--就是让父组件插槽可以访问子组件的私有数据</h3>
     <!-- 默认插槽 -->
     <slot></slot>
     <slot name="foot"></slot>
+    <!-- 子组件的插槽占位符 必须通过属性绑定 将值传递出去 -->
     <slot name="top" v-bind:count="count"></slot>
   </div>
 </template>

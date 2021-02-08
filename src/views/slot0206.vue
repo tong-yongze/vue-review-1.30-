@@ -7,6 +7,7 @@
       <template slot="foot">
           <h5 >我也是具名插槽的内容，换一种写法</h5>
       </template>
+      <!-- 涉及到 template 三种写法 slot="xxx" #header="xxx"  v-slot:default/top="xxxx"-->
       <!-- 父组件的内容 可以访问子组件内部的变量 -->
       <!-- v-slot:default 便是外面这个插槽内容 会自动添加到默认插槽里面去 -->
       <template v-slot:top="slotProps">
