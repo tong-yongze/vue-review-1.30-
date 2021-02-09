@@ -43,6 +43,12 @@ const routes = [
     name: 'Slot0206',
     component:() => import('../views/slot0206.vue')
   }
+  ,
+  {
+    path: '/dynCom0209',
+    name: 'DynCom0209',
+    component:() => import('../views/dynCom0209.vue')
+  }
 ]
 
 const router = new VueRouter({
